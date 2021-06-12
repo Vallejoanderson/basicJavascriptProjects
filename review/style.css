@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*,
+html,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+}
+
+body{
+    background: rgba(226, 226, 226, 0.972);
+}
+
+p{
+  color: rgba(26, 23, 23, 0.651);
+  font-size: 1.7em;
+  margin: 10px 0 10px 0;
+}
+
+h1{
+  font-size:  4em;
+  text-align: center;
+  color: rgb(18, 18, 22);
+}
+
+h2{
+  font-size: 1.8em;
+  letter-spacing: 2px;
+}
+
+h3{
+  font-size: 1.2em;
+  color: rgb(65, 164, 177);
+}
+
+button{
+  padding: 6px;
+  border-radius: 10px;
+  border: 2px solid rgb(99, 151, 173);
+  background: rgba(218, 249, 251, 0.986);
+  color: rgb(17, 130, 150);
+  cursor: pointer;
+  font-size: 1.4em;
+  margin: 5px;
+}
+
+button:hover{
+  background: rgba(161, 234, 240, 0.986);
+  color: rgb(29, 29, 29);
+}
+
+.container{
+  width: 50%;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgb(200, 200, 202);
+  margin: 5% auto;
+  background: rgba(251, 251, 251, 0.966);
+  text-align: center;
+}
+
+.image-container{
+  margin: auto;
+  width: 120px;
+  height: 120px;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius:  50%;
+  border: 1px solid rgb(39, 133, 177);
+}

@@ -1,0 +1,48 @@
+*,
+html,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: rgb(216, 216, 216);
+}
+
+p{
+    text-align: center;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.container {
+    background: #6ED6F5;
+    border: 1px solid #46a9c7;
+    width: 40%;
+    margin: 15% auto;
+    padding: 10px 50px;
+    border-radius: 15px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: #6ED6F5;
+    color: #06041F; 
+    border: 2px solid #06041F;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px #c8c7ce;
+}
+
+button:hover{
+    background-color: #06041F;
+    color: #6ED6F5;
+}
