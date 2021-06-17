@@ -1,0 +1,107 @@
+*,
+html,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+}
+
+.container{
+    position: relative;
+    border-radius: 10px;
+    color: rgb(53, 46, 46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px auto 0 auto;
+    height: 300px;
+    width: 90%;
+    background: #fff;
+}
+
+h1{
+    letter-spacing: 3px;
+    padding: 60px;
+    text-align: center;    
+}
+
+h2{
+    margin-top: 110px;
+    text-align: center;
+}
+
+/*styling button*/
+.button{
+    background-color: rgb(119, 174, 211);
+    border: 2px solid rgb(119, 174, 211);
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    padding: 10px 30px;
+}
+
+/*semitransparent background*/
+.show-top-layer{
+    background-color: rgba(115, 158, 214, 0.5);
+    left: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*Hide modal content element by default*/
+.hidden{
+    visibility: hidden;
+}
+
+/*class for modal content element*/
+.modal-class{
+    background-color: #fff;
+    border-radius: 10px;
+    height: 250px;
+    margin-top: 25px;
+    position: absolute;
+    visibility: visible;
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 10;
+}
+
+i{
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+i:hover{
+    transform: scale(1.5);
+    transition: all 0.7s;
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 600px;
+    }
+
+    .button:hover{
+    background-color: #fff;
+    color: rgb(119, 174, 211);
+    transition: all 0.6s;
+}
+}
+
+
