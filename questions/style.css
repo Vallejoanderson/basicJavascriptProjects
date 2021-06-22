@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*,
+html,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(216, 228, 225);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+h1{
+    color: rgb(114, 114, 114);
+    padding: 60px;
+    text-align: center;
+}
+
+h2{
+    color: rgb(117, 113, 113);
+    font-size: 1.8em;
+    font-weight: 400;
+    padding-right: 25px;
+}
+
+p{
+    border-top: 1px solid rgb(179, 172, 172);
+    font-size: 1.6em;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.questions{
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    color: rgb(65, 65, 60);
+    margin: 20px auto;
+    padding: 10px 25px 20px 25px;
+    width: 90%;
+}
+
+#icons{
+    color: rgb(106, 154, 182);
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+#icons:hover{
+    animation-name: spin;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1s;
+    animation-timing-function: linear; 
+}
+
+.hide-item > .plus{
+    display: none;
+}
+
+.minus{
+    display: none;
+}
+
+.hide-item > .minus{
+    display: block;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(90deg);
+    }
+}
