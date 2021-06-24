@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+*,
+html,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+	font-family: 'Crimson Text', serif;
+	font-size: 10px;
+}
+
+h1{
+	border-bottom: 5px solid #c8b508;
+	color: rgb(92, 91, 89);
+	font-size: 4em;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.buttons{
+	margin-left: 35%;
+	margin-bottom: 45px;
+	margin-top: 25px;
+}
+
+button{
+	border: 2px solid #c8b508;
+	border-radius: 7px;
+	box-shadow: 1px 1px 1px 1px #e0ddc2;
+	font-size: 1.6em;
+	margin-right: 10px;
+	padding: 5px 10px;
+}
+
+button:hover{
+	color: #fff;
+	cursor: pointer;
+	background-color: #c8b508;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(2, 550px);
+	margin-left: 15%;
+	width: 90%;
+}
+
+.item{
+	display: flex;
+	justify-content: space-between;
+	height: 180px;
+	width: 520px;
+}
+
+.item-title{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px dotted #000;
+	padding-bottom: 5px;
+}
+
+h2{
+	color: rgb(66, 62, 62);
+	display: inline-block;
+	font-size: 1.8em;
+	letter-spacing: 2px;
+}
+
+span{
+	color: #8b8200;
+	font-size: 1.8em;
+	letter-spacing: 2px;
+	padding-left: 55px;
+	text-align:end;
+}
+
+p{
+	color: rgb(143, 141, 141);
+	font-size: 1.8em;
+	padding-top: 10px;
+}
+
+.image-container{
+	height: 180px;
+	padding: 20px 1px;
+	width: 220px;
+}
+
+img{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	border: 3px solid #cebf1d;
+	border-radius: 5%;
+}
+
+.text{
+	padding: 15px 0 5px 10px;
+	width: 70%;
+}
