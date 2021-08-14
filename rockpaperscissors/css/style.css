@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-size: 10px;
+}
+
+.move, .result{
+    font-size: 3rem;
+}
+
+.move{
+    display: inline-block;
+}
+
+.mymove{
+    margin-left: 5rem;
+    margin-right: 10rem;
+}

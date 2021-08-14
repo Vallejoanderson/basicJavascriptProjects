@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    overflow: hidden;
+}
+
+.video{
+    object-fit: fill;
+    height: 100vh;
+    width: 100%;
+}
+
+.semitransparency{
+    background-color: #000;
+    color: red;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
