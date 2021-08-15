@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <video class="video" autoplay muted loop id="video">
-            <source src="media/video.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="semitransparency">Video Project</div>
+	<div class="container">
+		<video class="video" autoplay muted loop src="media/video.mp4"></video>
+		<h1>Video Project</h1>
+		<div class="flipswitch">
+    	<input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+    	<label class="flipswitch-label" for="fs">
+        <div class="flipswitch-inner"></div>
+        <div class="flipswitch-switch"></div>
+    </label>
+		</div>
+
+	</div>
+	<script src="script/main.js"></script>
 </body>
 </html>

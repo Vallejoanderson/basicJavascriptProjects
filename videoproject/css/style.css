@@ -1,23 +1,117 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body{
+	overflow: hidden
 }
 
 .container{
-    overflow: hidden;
+	color: #000;
+	display: grid;
 }
 
 .video{
-    object-fit: fill;
-    height: 100vh;
-    width: 100%;
+	object-fit: fill;
+	object-position: 0px -120px;
+	position: absolute;
+	z-index: -2;
 }
 
-.semitransparency{
-    background-color: #000;
-    color: red;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
+h1{
+	align-items: center;
+	color: rgb(255, 255, 255);
+	font-size: 60px;
+	letter-spacing: 5px;
+	text-align: center;
+	margin-top: 350px;
+}
+
+.container::after{
+	content: "";
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+/* Switch */
+
+.flipswitch {
+  position: absolute;
+	bottom: 50px;
+	left: 50px;
+  width: 110px;
+}
+.flipswitch input[type=checkbox] {
+  display: none;
+}
+.flipswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0px solid #319968;
+  border-radius: 8px;
+}
+.flipswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.flipswitch-inner:before, .flipswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 32px;
+  padding: 0;
+  line-height: 32px;
+  font-size: 16px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.flipswitch-inner:before {
+  content: "Play";
+  padding-left: 7px;
+  background-color: #F6F6F6;
+  color: #49A6E9;
+}
+
+.flipswitch:hover .flipswitch-inner:before{
+	background-color: transparent;
+}
+
+.flipswitch:hover .flipswitch-inner:after{
+	background-color: transparent;
+}
+
+.flipswitch-inner:after {
+  content: "Pause";
+  padding-right: 7px;
+  background-color: #F6F6F6;
+  color: #49A6E9;
+  text-align: right;
+}
+.flipswitch-switch {
+  width: 50px;/**/
+  margin: 0px;
+  background: #49A6E9;
+  border: 0px solid #319968;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 60px;
+  transition: all 0.3s ease-in 0s;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+  margin-left: 0;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+  right: 0;
 }
