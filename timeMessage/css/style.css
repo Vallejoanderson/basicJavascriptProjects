@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+}
+
+.container{
+    background-color: gray;
+    border-radius: 10px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 400px;
+}
+
+.button{
+    margin-top: 250px;
+}
+
+.greeting{
+    color: black;
+}
