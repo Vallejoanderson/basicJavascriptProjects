@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+.nav{
+	background-color:rgb(255, 255, 255);
+	height: 80px;
+	overflow: hidden;
+	padding: 10px;
+	width: 100%;
+}
+
+.image{
+	height: 60px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.home{
+	background-image: linear-gradient(rgba(126, 236, 218, 0.7), rgba(126, 236, 218, 0.7)), 
+	url(../media/hero-bcg.jpeg);
+	background-position: center;
+	color:rgb(255, 255, 255);
+	font-size: .9rem;
+	height: 100vh;
+	text-align: center;
+}
+
+.home__title{
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+	margin-top: 0;
+	padding-top: 100px;
+	text-transform: uppercase;
+}
