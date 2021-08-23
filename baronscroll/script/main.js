@@ -2,24 +2,23 @@ const year = document.querySelector('.year');
 const barmenu = document.querySelector('.barmenu');
 const topics = document.querySelector('.topics');
 const topicsnames = document.querySelectorAll('.topics__name');
+const tours = document.getElementById('tours');
 
-window.addEventListener('scroll', () => {
-	console.log(barmenu.getBoundingClientRect().top);
+topicsnames.forEach( (topicsname) => { /* Scroll smooth to an element */
+	topicsname.addEventListener('click', () => {
+		const gotoSection = document.getElementById(topicsname.textContent);
+		gotoSection.scrollIntoView({
+			behavior: 'smooth'
+		});
+	});
 });
 
-barmenu.addEventListener('click', () => {
+barmenu.addEventListener('click', () => { /* Hide or unhide bar menu in phone devices */
 	if( topics.classList.contains('topics-height--zero') ){
 		topicsnames.forEach( (topicsname) => {
 			topicsname.classList.remove('topics__name-color--transparent');
 		})		
 		topics.classList.remove('topics-height--zero');
-		
-		window.scrollTo({
-			top: barmenu.getBoundingClientRect().top = 930,
-			left: 0,
-			behavior: 'smooth'
-		});
-
 	}
 	else{
 		topicsnames.forEach( (topicsname) => {
@@ -29,5 +28,5 @@ barmenu.addEventListener('click', () => {
 	}
 });
 
-let date = new Date();
+let date = new Date(); /* Get the year */
 year.textContent = date.getFullYear();
