@@ -8,7 +8,7 @@ body{
 	margin: 0;
 }
 
-.nav{
+.nav-top{
 	background-color:rgb(255, 255, 255);
 	display: flex;
 	height: 80px;
@@ -22,11 +22,32 @@ body{
 	height: 60px;
 }
 
+.topics{
+	transition: all 0.1s ease-out;
+	height: 180px;
+	padding-left: 1rem;
+	padding-top: 0;
+}
+
+.topics-height--zero{
+	height: 0px;
+}
+
 ul{
+	padding: 0;
 	list-style-type: none;
 }
 
-.icon{
+.topics__name{
+	cursor: pointer;
+	line-height: 2.5;
+}
+
+.topics__name-color--transparent{
+	color: transparent;
+}
+
+.barmenu{
 	cursor: pointer;
 	margin-top: 15px;
 	margin-right: 20px;
