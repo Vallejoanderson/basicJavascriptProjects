@@ -85,3 +85,33 @@ ul{
 	text-align: center;
 	padding: 50px 20px;
 }
+
+@media (min-width: 640px){
+	.barmenu--display-hide{
+		display: none;
+	}
+
+	.topics__name-color--black{
+		color: black;
+	}
+
+	.nav{
+		display: flex;
+		padding-right: 25px;
+	}
+
+	ul{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.topics__name{
+		padding-top: 25px;
+		margin-left: 15px;
+	}
+
+	.topics__name:hover{
+		color: rgb(51, 47, 47);
+	}
+
+}
